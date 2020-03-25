@@ -33,7 +33,7 @@ class MainActivity extends AppCompatActivity {
      Retrofit retrofit = new Retrofit.Builder()
      .baseUrl(API_BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create());
-     .build();
+    // .build();
 
      MyService service = retrofit.create(MyService.class);
      Call<List<Country>> listCountry = service.getCountry();
